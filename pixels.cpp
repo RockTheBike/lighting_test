@@ -112,10 +112,10 @@ void advanceAll(float wheelAdvance){
 		//setStrip(*strips[i], r, g, b);
 		Adafruit_NeoPixel* strip = strips[i];
 		for(uint16_t j = 0; j < strip->numPixels(); j++){
-			uint32_t t = strip->getPixelColor(j);
-			uint8_t r = (t >> 16) & 0xFF;
-			uint8_t g = (t >> 8) & 0xFF;
-			uint8_t b = t & 0xFF;
+//			uint32_t t = strip->getPixelColor(j);
+//			uint8_t r = (t >> 16) & 0xFF;
+//			uint8_t g = (t >> 8) & 0xFF;
+//			uint8_t b = t & 0xFF;
 			strip->setPixelColor(j, Wheel(wheelAdvance));
 		}
 	}
